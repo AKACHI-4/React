@@ -8,12 +8,13 @@ import React from 'react'
 
 // const Greet = () => <h1>Hello React from Functional Components</h1>
 
-export const Greet = () => <h1>Hello React from Functional Components</h1>
+// export const Greet = () => <h1>Hello React from Functional Components</h1>
 
 // props 
 // export const Greet = (props) => {
 //     console.log(props)
-//     return <h1>Hello {props.name} from {props.Area}</h1>
+//     return <h1>Hello {props.name}</h1>
+//     // return <h1>Hello {props.name} from {props.Area}</h1>
 // }
 // by using curly braces it treated as the object which is the feature of JSX
 
@@ -67,16 +68,16 @@ export const Greet = () => <h1>Hello React from Functional Components</h1>
 // }
 
 // DeStructuring-2
-// const Greet = props => {
-//     const {name, Area} = props
-//     return (
-//         <div>
-//             <h1>
-//                 Hello {name} from {Area}
-//             </h1>
-//         </div>
-//     )
-// }
+const Greet = props => {
+    const {name, Area} = props
+    return (
+        <div>
+            <h1>
+                Hello {name} from {Area}
+            </h1>
+        </div>
+    )
+}
 
 // Syntax to Destructure Stae 
 
