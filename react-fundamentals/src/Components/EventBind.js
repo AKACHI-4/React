@@ -10,7 +10,7 @@ class EventBind extends Component {
       }
 
       // #W3 
-      this.clickHandler = this.clickHandler.bind(this)
+      // this.clickHandler = this.clickHandler.bind(this)
     }
 
     // clickHandler () { 
@@ -57,11 +57,11 @@ class EventBind extends Component {
     // Merits : As binding happens once in the constructor, This is the better compare to binding in render Method 
 
     // Way-4 : Use Arrow function as a class property 
-    clickHandler = () => { 
-        this.setState( {
-            message: 'Krishna Krishna'
-        })
-    }
+    // clickHandler = () => { 
+    //     this.setState( {
+    //         message: 'Krishna Krishna'
+    //     })
+    // }
 
   render() {
     return (
@@ -72,7 +72,7 @@ class EventBind extends Component {
         { /* Way-2 */ } 
         {/* <button onClick={() => this.clickHandler()}>Click</button> */}
         { /* Way-3 + Way-4 */ } 
-        <button onClick={this.clickHandler}>Click</button> 
+        {/* <button onClick={this.clickHandler}>Click</button>  */}
         {/* React docs suggets either Way-3 or Way-4
         {/* Way-4 is still in experimental feature */}
         {/* So Way-3 is best option Right now */}
@@ -82,3 +82,19 @@ class EventBind extends Component {
 }
 
 export default EventBind
+
+/*
+  this keyword - JavaScript
+
+  - In JavaScript, the value of `this` is determined by how a function is called. 
+  
+  - Global context: When this is used outside of any function or object, it refers to the global object, which is usually the window object in a web browser or the global scope in Node.js.
+
+  - Function context: When this is used within a regular function (not an arrow function), its value depends on how the function is called:
+    - If the function is called as a method of an object (object.method()), this refers to the object itself.
+    - If the function is called as a standalone function (myFunction()), this refers to the global object (in non-strict mode) or undefined (in strict mode).
+
+  - Arrow function context: Arrow functions have a lexical this binding, which means that this is not determined by how the function is called but rather by the surrounding context in which the arrow function is defined. The value of this inside an arrow function refers to the this value of the enclosing scope.
+
+
+*/

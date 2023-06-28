@@ -20,6 +20,7 @@ class UserGreeting extends Component {
     ) // if Left hand side is true then right side text displayed and if it is false then text will not displayed 
 
     // 3. Ternary conditional operator ( mostly used )
+    // Can be used Inside JSX
     // return (
     //     this.state.isLoggedIn ? (
     //     <div>Hare Krishna</div> 
@@ -59,3 +60,6 @@ class UserGreeting extends Component {
 }
 
 export default UserGreeting
+
+
+/* Using if/else condition inside jsx is not valid */

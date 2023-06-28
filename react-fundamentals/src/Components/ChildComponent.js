@@ -10,3 +10,9 @@ function ChildComponent (props) {
 }
 
 export default ChildComponent
+
+/*
+
+  Arrow function's literal is simpler and effective while passing parameters to the function from child component to parent component
+
+*/

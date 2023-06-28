@@ -89,3 +89,10 @@ class Counter extends Component {
 }
 
 export default Counter
+
+/*
+
+    - Code has to be executed after the state has been updated ? Place that code in the callback function which is the second argument to the setState method.
+    - When we have to update state based on the previous state pass previous state as an argument in fucniton instead of passing regular object.
+
+*/
