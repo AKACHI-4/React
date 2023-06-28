@@ -9,7 +9,8 @@ function FunctionClick() {
         <button onClick={clickHandler}>Click</button> {/* Right */}
 
         { /* <button onClick={clickHandler()}>Click</button> Wrong */} 
-        {/* If we put parantheses so In console Message get printed before click event, as we called the function earlier then event. Also now on clicking button nothing will going to be happen */}
+        {/* If we put parantheses so In console Message get printed before click event, as we called the function earlier then event occurs. Also now on clicking button nothing will going to be happen as passed value is function call not function itself. */}
+        {/* So Event Handler is function not function call !! */}
         {/* This scenario become worse in class component when our click handler changes the state of component */}
         {/* The component constantly re-renders and we might see infinite no of message in the console */}
 
