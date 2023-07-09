@@ -15,6 +15,7 @@ class UserGreeting extends Component {
   render() {
 
     // 4. Short Circuit operator ( most cases )
+    // Specific case of ternary opeartor 
     return (
         this.state.isLoggedIn && <div>Hare Krishna</div>
     ) // if Left hand side is true then right side text displayed and if it is false then text will not displayed 

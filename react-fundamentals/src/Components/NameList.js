@@ -57,4 +57,11 @@ function NameList() {
     3. list will never be recordered or filtered ( like sorting and filtering )
 */
 
+// Why Problem occurs in the above example ? 
+/*
+    1. It happens because of the way React updates the DOM
+    2. It believes on preserving or utilizing the DOM nodes as much as possible
+    3. In that way it becomes efficient in updating the DOM and never assigned a hard coded index or key to list item 
+*/
+
 export default NameList
