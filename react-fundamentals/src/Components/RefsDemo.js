@@ -1,38 +1,38 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class RefsDemo extends Component {
+  constructor(props) {
+    super(props);
+    this.inputRef = React.createRef();
 
-    constructor(props) {
-      super(props)
-      this.inputRef = React.createRef()
-      // cb referred to as callback ref
-      this.cbRef = null
-      this.setCbRef = ele => {
-        this.cbRef = ele
-      }
-    }
-    
-    componentDidMount() {
-        if (this.cbRef) {
-            this.cbRef.focus()
-        }
-        // this.inputRef.current.focus(); 
-        // console.log(this.inputRef); 
-    }
+    // cb referred to as callback ref
+    this.cbRef = null;
+    this.setCbRef = (ele) => {
+      this.cbRef = ele;
+    };
+  }
 
-    clickHandler = () => {
-        alert(this.inputRef.current.value); 
+  componentDidMount() {
+    if (this.cbRef) {
+      this.cbRef.focus();
     }
+    // this.inputRef.current.focus();
+    // console.log(this.inputRef);
+  }
+
+  clickHandler = () => {
+    alert(this.inputRef.current.value);
+  };
 
   render() {
     return (
       <div>
-        <input type="text" ref={this.inputRef}/>
-        <input type="text" ref={this.setCbRef}/>
+        <input type="text" ref={this.inputRef} />
+        <input type="text" ref={this.setCbRef} />
         <button onClick={this.clickHandler}>Click</button>
       </div>
-    )
+    );
   }
 }
 
-export default RefsDemo
+export default RefsDemo;

@@ -1,14 +1,14 @@
-import logo from './logo.svg';
+import logo from "./logo.svg";
 
 /* Style */
-import './App.css';
+import "./App.css";
 // import styles from './appStyles.module.css'
 // import './appStyles.css'
 
 /* Components */
-import FRParentInput from './Components/FRParentInput';
+// import FRParentInput from "./Components/FRParentInput";
 // import FocusInput from './Components/FocusInput';
-// import RefsDemo from './Components/RefsDemo';
+import RefsDemo from "./Components/RefsDemo";
 // import ParentComp from './Components/ParentComp';
 // import Table from './Components/Table';
 // import FragmentDemo from './Components/FragmentDemo';
@@ -37,7 +37,7 @@ function App() {
         {/* <h1>Hello React</h1> */}
 
         {/* <Greet /> */}
-        {/* <Welcome /> */} 
+        {/* <Welcome /> */}
         {/* <JSX /> */}
 
         {/* Self Closing tab bcoz There are no components inside component Greet */}
@@ -49,17 +49,17 @@ function App() {
           <p>I am children prop of Solidity</p>
         </Greet> */}
         {/* <Greet name="Express" Area="Backend" />  */}
-    
+
         {/* props with Class Componentsd  */}
-    
+
         {/* Irrespective of component type the properties are mentioned as attribute during the component invocation */}
-          
+
         {/* <Welcome name="TypeScript" Area="Frontend" /> */}
         {/* <Welcome name="Solidity" Area="Unknown" /> */}
         {/* <Welcome name="Express" Area="Backend" />  */}
 
         {/* <Message /> */}
-      
+
         {/* <Counter /> */}
 
         {/* <FunctionClick /> */}
@@ -78,11 +78,9 @@ function App() {
 
         {/* <InlineStyle /> */}
 
-        
         {/* <h3 className='error'>Error</h3> */}
         {/* <h3 className={styles.success}>Success</h3>  */}
-        
-    
+
         {/* 
           Advantage of using CSS modules is 
           - The classes are locally scoped by default 
@@ -100,16 +98,14 @@ function App() {
 
         {/* <ParentComp /> */}
 
-        {/* <RefsDemo /> */}
+        <RefsDemo />
 
         {/* <FocusInput /> */}
 
         {/* <FRParentInput /> */}
-
       </header>
     </div>
   );
 }
 
 export default App;
-

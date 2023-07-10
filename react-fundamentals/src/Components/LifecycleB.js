@@ -1,45 +1,42 @@
-import React, { Component } from 'react'
-
+import React, { Component } from "react";
 
 export class LifecycleB extends Component {
-    constructor(props) {
-        super(props)
-      
-        this.state = {
-          name: 'Adarsh'
-        }
-        console.log('LifeCycleB constructor')
-    }
+  constructor(props) {
+    super(props);
 
-    static getDerivedStateFromProps( props, state ) {
-        console.log('LifeCycleB getDerivedStateFromProps')
-        return null
-    }
+    this.state = {
+      name: "Adarsh",
+    };
+    console.log("LifeCycleB constructor");
+  }
 
-    shouldComponentUpdate() {
-        console.log('LifeCycleB shouldComponentUpdate')
-        return true 
-    }
+  static getDerivedStateFromProps(props, state) {
+    console.log("LifeCycleB getDerivedStateFromProps");
+    return null;
+  }
 
-    getSnapshotBeforeUpdate (prevProps, prevState) { 
-        console.log('LifeCycleB getSnapshotBeforeUpdate')
-        return null 
-    }
+  shouldComponentUpdate() {
+    console.log("LifeCycleB shouldComponentUpdate");
+    return true;
+  }
 
-    componentDidUpdate() {
-        console.log('LifeCycleB componentDidUpdate')
-    }
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log("LifeCycleB getSnapshotBeforeUpdate");
+    return null;
+  }
 
-    componentDidMount() {
-        console.log('LifeCycleB componentDidMount')
-    }
+  componentDidUpdate() {
+    console.log("LifeCycleB componentDidUpdate");
+  }
 
-    render() {
-        console.log('LifeCycleB render')
-        return <div>LifeCycleB</div>
-    }
+  componentDidMount() {
+    console.log("LifeCycleB componentDidMount");
+  }
 
-
+  render() {
+    console.log("LifeCycleB render");
+    return <div>LifeCycleB</div>;
+  }
 }
 
-export default LifecycleB
+export default LifecycleB;
