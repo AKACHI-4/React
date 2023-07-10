@@ -69,7 +69,7 @@
 
   ```markdown
   SC of prevState with currState
-  ==== Difference? ====> Re-render
+                                  ==== Difference? ====> Re-render
   SC of prevProps with currProps
   ```
 
